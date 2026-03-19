@@ -1,12 +1,26 @@
 'use client';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useRef } from 'react';
-import * as THREE from 'three';
+import { useRef, useMemo } from 'react';
+import { 
+  Mesh, 
+  Group, 
+  Fog, 
+  AmbientLight, 
+  PointLight, 
+  SphereGeometry, 
+  TorusGeometry, 
+  MeshStandardMaterial, 
+  MeshBasicMaterial,
+  Timer
+} from 'three';
 
 function Globe() {
-  const meshRef = useRef<THREE.Mesh>(null);
+  const meshRef = useRef<Mesh>(null);
+  const timer = useMemo(() => new Timer(), []);
   
-  useFrame((state, delta) => {
+  useFrame(() => {
+    timer.update();
+    const delta = timer.getDelta();
     if (meshRef.current) {
       meshRef.current.rotation.y += delta * 0.15;
       meshRef.current.rotation.x += delta * 0.05;
@@ -29,9 +43,12 @@ function Globe() {
 }
 
 function FloatingRings() {
-  const groupRef = useRef<THREE.Group>(null);
+  const groupRef = useRef<Group>(null);
+  const timer = useMemo(() => new Timer(), []);
   
-  useFrame((state, delta) => {
+  useFrame(() => {
+    timer.update();
+    const delta = timer.getDelta();
     if (groupRef.current) {
       groupRef.current.rotation.x += delta * 0.1;
       groupRef.current.rotation.y -= delta * 0.1;

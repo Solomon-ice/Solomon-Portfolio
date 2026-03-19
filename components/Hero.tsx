@@ -34,9 +34,9 @@ export default function Hero() {
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-           className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white via-white/90 to-white/30"
+           className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-6 text-transparent bg-clip-text bg-linear-to-b from-white via-white/90 to-white/30"
         >
-          Solomon Bright
+          Solomon Billot
         </motion.h1>
 
         <motion.p 
@@ -61,7 +61,7 @@ export default function Hero() {
       </div>
 
       {/* Cinematic Spotlight & Fade to next section */}
-      <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-background via-background/80 to-transparent z-10 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-linear-to-t from-background via-background/80 to-transparent z-10 pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 rounded-full blur-[120px] pointer-events-none z-0 mix-blend-screen" />
     </section>
   );

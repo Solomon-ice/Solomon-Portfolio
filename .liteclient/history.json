@@ -1,0 +1,26 @@
+[
+  {
+    "id": "90306182-f411-4cb6-ad8a-2d80aba2a9e6",
+    "timestamp": 1773962905166,
+    "source": {
+      "type": "scratch"
+    },
+    "request": {
+      "name": "3000/api/contact",
+      "method": "GET",
+      "url": "localhost:3000/api/contact",
+      "headers": {},
+      "body": {
+        "mode": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "preRequestScript": "",
+      "postResponseScript": ""
+    },
+    "result": {
+      "status": "Invalid Protocol"
+    }
+  }
+]
