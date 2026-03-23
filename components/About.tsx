@@ -23,13 +23,10 @@ export default function About() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
             <div className="w-20 h-1 bg-linear-to-r from-cyan-400 to-purple-500 mb-8 rounded-full" />
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              I am a visionary software engineer bridging the gap between imaginative design and robust engineering. 
-              My journey is defined by a passion for the avant-garde—pushing boundaries with modern web technologies 
-              to create immersive, performant, and cinematic digital products.
+              I am a software engineer passionate about crafting immersive digital experiences that sit at the intersection of design and engineering. My work is driven by a desire to push boundaries—leveraging modern web technologies to build applications that are not only performant and scalable, but also visually engaging and intuitive.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
-              When I&apos;m not architecting systems, I&apos;m experimenting with generative art, 3D web experiences, 
-              and uncovering new dimensions of user interaction.
+I specialize in developing responsive, high-performance web applications using tools like Next.js, React, and modern animation libraries. My approach combines clean architecture with attention to detail, ensuring that every product I build is both technically sound and aesthetically refined.
             </p>
           </motion.div>
 

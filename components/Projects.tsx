@@ -2,29 +2,33 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image'; // using Next Image requires configured host. We will use a placeholder or div if needed.
+import Link from 'next/link';
 
 export default function Projects() {
   const projects = [
     {
-      title: "Nebula Protocol",
-      category: "DeFi Platform",
-      desc: "A frictionless decentralized exchange built on a custom rollup.",
-      tech: ["Next.js", "Solidity", "Tailwind", "Three.js"],
+      title: "CS Solutions INC.",
+      category: "Website",
+      desc: "A smooth website that showcase details of Cs Solutions INC.",
+      tech: ["HTML", "CSS", "JavaScript"],
       color: "from-cyan-500/20 to-blue-500/20",
+      link:""
     },
     {
-      title: "Aura Workspace",
-      category: "SaaS App",
-      desc: "An AI-powered contextual workspace for remote teams.",
-      tech: ["React", "Node.js", "PostgreSQL", "OpenAI"],
+      title: "Solomon's Resume builder",
+      category: "Next app",
+      desc: "A resume builder that helps you create professional resumes.",
+      tech: ["Next Js", "Next API Routes", "MongoDB", "TailwindCss","Framer Motion"],
       color: "from-purple-500/20 to-pink-500/20",
+       link:""
     },
     {
-      title: "Quantum Engine",
-      category: "Open Source",
-      desc: "A blazingly fast physics engine developed in Rust and WebAssembly.",
-      tech: ["Rust", "WASM", "WebGL"],
+      title: "Recipe Generator",
+      category: "Next app",
+      desc: "A recipe generator that helps you create professional recipes.",
+      tech: ["Next Js", "TailwindCss","Framer Motion"],
       color: "from-emerald-500/20 to-teal-500/20",
+      link:"https://foodie-fote.vercel.app/"
     }
   ];
 
@@ -56,9 +60,9 @@ export default function Projects() {
                 <div className="p-8 h-full flex flex-col relative z-10">
                   <div className="flex justify-between items-start mb-12">
                      <span className="text-xs font-semibold tracking-wider text-gray-400 uppercase">{proj.category}</span>
-                     <div className="p-2 rounded-full bg-white/5 border border-white/10 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                     <a href={`${proj.link}`} className="p-2 rounded-full bg-white/5 border border-white/10 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                        <ArrowUpRight className="w-4 h-4 text-white" />
-                     </div>
+                     </a>
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-white">{proj.title}</h3>
                   <p className="text-gray-400 mb-8 grow">{proj.desc}</p>

@@ -4,23 +4,18 @@ import { motion } from 'framer-motion';
 export default function Experience() {
   const experiences = [
     {
-      year: "2024 - Present",
-      role: "Senior Creative Technologist",
-      company: "Stellar Agency",
-      desc: "Leading the development of award-winning immersive web experiences using WebGL and advanced React architectures."
+      year: "2025 - Present",
+      role: "Software Engineer",
+      company: "CS Solutions INC.",
+      desc: "Leading the development of award-winning immersive web experiences using Express, React and advanced React architectures."
     },
     {
       year: "2022 - 2024",
       role: "Frontend Engineer",
-      company: "Quantum Software",
+      company: "Freelancer",
       desc: "Architected micro-frontends and built high-performance dashboards that handle real-time data streaming."
     },
-    {
-      year: "2020 - 2022",
-      role: "Full Stack Developer",
-      company: "Nebula Labs",
-      desc: "Developed scalable APIs and interactive UI components for various enterprise startups."
-    }
+  
   ];
 
   return (
@@ -36,7 +31,7 @@ export default function Experience() {
           <div className="w-20 h-1 bg-linear-to-r from-teal-400 to-emerald-500 rounded-full mb-16" />
         </motion.div>
 
-        <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-teal-500/50 before:via-white/10 before:to-transparent">
+        <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-linear-to-b before:from-teal-500/50 before:via-white/10 before:to-transparent">
           {experiences.map((exp, i) => (
             <div key={i} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
               

@@ -45,7 +45,7 @@ export default function Hero() {
            transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
            className="text-lg md:text-2xl text-gray-400 max-w-2xl mb-12 font-light leading-relaxed"
         >
-          Crafting digital experiences that feel alive.
+        I’m a software engineer focused on building immersive, high-performance digital experiences. I blend modern web technologies with thoughtful design to create products that are not only functional, but visually compelling and intuitive.
         </motion.p>
 
         <motion.div
@@ -60,7 +60,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Cinematic Spotlight & Fade to next section */}
+
       <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-linear-to-t from-background via-background/80 to-transparent z-10 pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 rounded-full blur-[120px] pointer-events-none z-0 mix-blend-screen" />
     </section>

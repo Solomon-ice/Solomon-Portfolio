@@ -31,7 +31,7 @@ function Globe() {
     <mesh ref={meshRef}>
       <sphereGeometry args={[2.8, 64, 64]} />
       <meshStandardMaterial 
-        color="#ffffff" 
+        color="#0000" 
         wireframe 
         transparent 
         opacity={0.08}
