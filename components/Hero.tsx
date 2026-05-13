@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 
 const Scene = dynamic(() => import('@/components/Scene'), { ssr: false });
 const Particles = dynamic(() => import('@/components/Particles'), { ssr: false });
@@ -18,8 +19,28 @@ export default function Hero() {
          <Particles />
       </div>
 
-      {/* Content */}
+     
       <div className="relative z-20 flex flex-col items-center justify-center text-center px-4 max-w-5xl">
+        <motion.div
+           initial={{ opacity: 0, scale: 0.8 }}
+           animate={{ opacity: 1, scale: 1 }}
+           transition={{ duration: 1, delay: 0.1, ease: "easeOut" }}
+           className="relative mb-6"
+        >
+          <div className="relative w-32 h-32 md:w-44 md:h-44 rounded-full p-1 bg-linear-to-b from-white/20 to-transparent shadow-[0_0_50px_rgba(255,255,255,0.1)]">
+            <div className="w-full h-full rounded-full overflow-hidden relative border border-white/10">
+              <Image 
+                src="/images/me.png" 
+                alt="Solomon Billot"
+                fill
+                className="object-cover scale-110 hover:scale-100 transition-transform duration-700"
+                priority
+              />
+            </div>
+          </div>
+          <div className="absolute -inset-4 bg-white/5 rounded-full blur-2xl -z-10 animate-pulse" />
+        </motion.div>
+
         <motion.div
            initial={{ opacity: 0, scale: 0.9, filter: 'blur(10px)' }}
            animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
