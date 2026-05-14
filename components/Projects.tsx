@@ -12,7 +12,7 @@ export default function Projects() {
       desc: "A smooth website that showcase details of Cs Solutions INC.",
       tech: ["HTML", "CSS", "JavaScript"],
       color: "from-cyan-500/20 to-blue-500/20",
-      link:""
+      link:"https://cssolutionslib.com/"
     },
     {
       title: "Solomon's Resume builder",
@@ -20,7 +20,15 @@ export default function Projects() {
       desc: "A resume builder that helps you create professional resumes.",
       tech: ["Next Js", "Next API Routes", "MongoDB", "TailwindCss","Framer Motion"],
       color: "from-purple-500/20 to-pink-500/20",
-       link:""
+       link:"https://https://solomon-stephen-resume-generator.vercel.app/"
+    },
+      {
+      title: "National Stroke Survival Association of Liberia (NASSAL)",
+      category: "Next app",
+      desc: "A website that talks about Stroke Survivals.",
+      tech: ["Next Js", "Next API Routes","TailwindCss","Framer Motion"],
+      color: "from-purple-500/20 to-pink-500/20",
+       link:"https://https://nassal.org/"
     },
     {
       title: "Recipe Generator",
