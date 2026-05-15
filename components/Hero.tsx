@@ -51,13 +51,16 @@ export default function Hero() {
              <span className="text-xs font-semibold tracking-widest uppercase text-gray-300">Software Engineer</span>
           </div>
         </motion.div>
-        <span className="relative flex h-3 gap-2  justify-center">
+        <div className="flex items-center gap-2">
+           <span className="relative flex h-3 justify-center">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
 
         </span>
         <span className='text-xs font-semibold tracking-widest uppercase text-gray-300'>Hello there, I'm</span>
 
+        </div>
+       
         <motion.h1 
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
@@ -73,8 +76,7 @@ export default function Hero() {
            transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
            className="mb-9 max-w-2xl text-base font-light leading-7 text-gray-300 sm:mb-11 sm:text-lg md:text-xl md:leading-8"
         >
-          I build immersive, high-performance web experiences with modern engineering, thoughtful interaction, and clean visual systems.
-        </motion.p>
+I’m a proud Liberian software engineer crafting immersive, high-performance web experiences with modern engineering, thoughtful interaction, and clean visual systems.        </motion.p>
 
         <motion.div
            initial={{ opacity: 0, y: 20 }}
