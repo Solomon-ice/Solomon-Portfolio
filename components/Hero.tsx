@@ -46,10 +46,17 @@ export default function Hero() {
            animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
            transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
         >
-          <div className="mb-6 inline-block rounded-full border border-white/10 px-4 py-1.5 shadow-[0_0_20px_rgba(255,255,255,0.1)] glass sm:mb-8">
+          <div className="mb-6 inline-block rounded-full border border-white/10 px-4 py-1.5 shadow-[0_0_20px_rgba(255,255,255,0.1)] backdrop-blur-sm sm:mb-8">
+              
              <span className="text-xs font-semibold tracking-widest uppercase text-gray-300">Software Engineer</span>
           </div>
         </motion.div>
+        <span className="relative flex h-3 gap-2  justify-center">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+
+        </span>
+        <span className='text-xs font-semibold tracking-widest uppercase text-gray-300'>Hello there, I'm</span>
 
         <motion.h1 
            initial={{ opacity: 0, y: 30 }}

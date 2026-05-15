@@ -4,9 +4,9 @@
 
 Software Engineer crafting immersive, high-performance digital experiences.
 
-🌐 Live Portfolio: https://your-portfolio-link.com
+🌐 Live Portfolio: https://solomon-portfolio.vercel.app/
 
-📧 Contact: solomonprincebright@gmail.com
+📧 Contact: [EMAIL_ADDRESS]
 
 ✨ Overview
 
