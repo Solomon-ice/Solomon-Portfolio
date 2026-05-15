@@ -4,6 +4,12 @@ import { motion } from 'framer-motion';
 export default function Experience() {
   const experiences = [
     {
+      year: "2026 - Present",
+      role: "Technical Lead - Developer",
+      company: "Vetsocom",
+      desc: "Leading the development of award-winning immersive web experiences using Wordpress, Nextjs, React, Node, Express, and advanced React architectures."
+    },
+    {
       year: "2025 - Present",
       role: "Software Engineer",
       company: "CS Solutions INC.",
